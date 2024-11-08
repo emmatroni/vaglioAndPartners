@@ -41,6 +41,10 @@ body.darkMode * .box#chi-siamo {
     background-color: #222b47;
 }
 
+body.darkMode * .value {
+    background-color: #222b47;
+  }
+
 /* ATTIVITA / SERVIZI*/
 body.darkMode * .attivita-row {
     background-color: #222b47;

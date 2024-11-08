@@ -102,7 +102,7 @@ header {
 }
 
 .menu li a:hover {
-  color: #00ba82;
+  color: #01a749;
 }
 
 /* MENU A TENDINA (dropdown) */
@@ -175,7 +175,7 @@ body.lightMode:hover * .green_button:hover {
 /*---------- MAIN - HOMEPAGE ---------*/
 /* da applicare in tutti i link nel testo*/
 .link {
-  color: #00ba82;
+  color: #01a749;
 }
 
 .link:hover {
@@ -344,7 +344,7 @@ body.lightMode * .card {
 }
 
 .punto:hover {
-  background-color: #00ba82;
+  background-color: #01a749;
   transform: scale(1.5);
 }
 
@@ -365,6 +365,57 @@ body.lightMode * .card {
   flex-wrap: wrap;
   /* justify-content: space-between; */
 }
+/*---------- SECTION - OUR-VALUES ----------*/
+
+body.lightMode * .value {
+  background-color: #f1f1f1;
+}
+.value{
+  padding: 20px;
+  margin: 40px 0 ;
+  border-radius: 10px;
+  max-width: 1000px;    /* Larghezza massima su schermi grandi */
+  box-sizing: border-box;
+}
+
+.values-testo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 40px;
+}
+.values-testo p {
+  padding: 5px 0;
+}
+
+.values-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.values-title {
+  text-align: center;
+}
+
+.value-img {
+  flex: 1;
+  overflow: hidden;
+}
+
+
+.value-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+}
+
+
 
 /*---------- SECTION - attivita / servizi ----------*/
 .box-attivita {
@@ -514,7 +565,7 @@ body.lightMode * .box#chi-siamo {
 
 .column h2 {
   font-size: 2.5em;
-  color: #00ba82;
+  color: #01a749;
   padding-bottom: 10px;
 }
 
@@ -535,7 +586,7 @@ body.lightMode * .box#chi-siamo {
 
 .contatti-icon {
   width: 15px;
-  fill: #00ba82;
+  fill: #01a749;
   margin-right: 15px;
 }
 
@@ -624,7 +675,7 @@ body.lightMode * .form-container {
 
 .highlight {
   font-weight: bold;
-  color: #00ba82;
+  color: #01a749;
 }
 
 .social-icon {
@@ -673,7 +724,7 @@ body.lightMode footer {
 }
 
 .fixed-footer p span {
-  color: #00ba82;
+  color: #01a749;
   font-size: 1em;
 }
 
@@ -682,7 +733,7 @@ body.lightMode footer {
   .menu {
     display: block;
     position: absolute;
-    background-color: #00ba82;
+    background-color: #01a749;
     height: 100vh;
     width: 10em;
     top: 0;
@@ -714,6 +765,24 @@ body.lightMode footer {
     color: #0c1226;
   }
 
+  /* value */
+  .value {
+    flex-direction: column;   /* Disposizione a colonna */
+    padding: 8vw;
+  }
+
+  .values-testo {
+    padding: 0;
+    text-align: center;       /* Testo centrato per estetica */
+    overflow: ;
+  }
+
+  .value-img img {
+    width: 100%;              /* Immagini responsive */
+    max-width: 400px;         /* Limita la larghezza massima */
+    height: auto;             /* Mantiene proporzioni */
+    margin: 0 auto;           /* Centra l'immagine */
+  }
   /* attivita - servizi */
   .box-attivita {
     margin: 100px 0;
@@ -814,6 +883,8 @@ body.lightMode footer {
     display: none;
   }
 
+  /* value */
+
   /* attivita */
   .box-attivita {
     margin: 20px 0;
@@ -822,7 +893,9 @@ body.lightMode footer {
   .row-flex-box {
     margin: 10 0;
   }
-
+  .value-testo{
+    text-align: center;
+  }
   .attivita-testo,
   .servizi-testo {
     text-align: center;
