@@ -27,7 +27,7 @@ a {
 
 .lightMode {
   background-color: white;
-  color: #0c1226;
+  color: #10273c;
 }
 
 /* ICONA CAMBIO MODALITA */
@@ -42,7 +42,7 @@ a {
 }
 
 .change_view_icon:hover {
-  fill: #009640;
+  fill: #009966;
 }
 
 /*                      HEADER                    */
@@ -102,7 +102,7 @@ header {
 }
 
 .menu li a:hover {
-  color: #01a749;
+  color: #00ba82;
 }
 
 /* MENU A TENDINA (dropdown) */
@@ -152,7 +152,7 @@ button {
 .green_button {
   border-style: solid;
   background-color: transparent;
-  border-color: #009640;
+  border-color: #009966;
   /* default border-style: outset - con un'ombra */
   transition: background-color 0.5s ease;
 }
@@ -162,7 +162,7 @@ body.lightMode * .green_button {
 }
 
 body.lightMode:hover * .green_button:hover {
-  background-color: #009640;
+  background-color: #009966;
   color: white;
 }
 
@@ -175,7 +175,7 @@ body.lightMode:hover * .green_button:hover {
 /*---------- MAIN - HOMEPAGE ---------*/
 /* da applicare in tutti i link nel testo*/
 .link {
-  color: #01a749;
+  color: #00ba82;
 }
 
 .link:hover {
@@ -344,7 +344,7 @@ body.lightMode * .card {
 }
 
 .punto:hover {
-  background-color: #01a749;
+  background-color: #00ba82;
   transform: scale(1.5);
 }
 
@@ -355,7 +355,7 @@ body.lightMode * .card {
 }
 
 .freccia:hover {
-  color: #009640;
+  color: #009966;
   transform: scale(1.5);
 }
 
@@ -504,7 +504,7 @@ body.lightMode * .box#chi-siamo {
 }
 
 .list li::marker {
-  color: #009640;
+  color: #009966;
 }
 
 .list li {
@@ -514,7 +514,7 @@ body.lightMode * .box#chi-siamo {
 
 .column h2 {
   font-size: 2.5em;
-  color: #01a749;
+  color: #00ba82;
   padding-bottom: 10px;
 }
 
@@ -535,7 +535,7 @@ body.lightMode * .box#chi-siamo {
 
 .contatti-icon {
   width: 15px;
-  fill: #01a749;
+  fill: #00ba82;
   margin-right: 15px;
 }
 
@@ -582,7 +582,7 @@ body.lightMode * .form-container {
 
 .input-field:focus,
 .textarea-field:focus {
-  border-color: #009640;
+  border-color: #009966;
   outline: none;
   box-shadow: 0 0 5px rgba(28, 138, 67, 0.5);
 }
@@ -624,7 +624,7 @@ body.lightMode * .form-container {
 
 .highlight {
   font-weight: bold;
-  color: #01a749;
+  color: #00ba82;
 }
 
 .social-icon {
@@ -640,7 +640,7 @@ body.lightMode * .social-icon {
 }
 
 .social-link:hover .social-icon {
-  fill: #009640;
+  fill: #009966;
   /* colore quando hover sopra icona */
 }
 
@@ -673,7 +673,7 @@ body.lightMode footer {
 }
 
 .fixed-footer p span {
-  color: #01a749;
+  color: #00ba82;
   font-size: 1em;
 }
 
@@ -682,7 +682,7 @@ body.lightMode footer {
   .menu {
     display: block;
     position: absolute;
-    background-color: #01a749;
+    background-color: #00ba82;
     height: 100vh;
     width: 10em;
     top: 0;

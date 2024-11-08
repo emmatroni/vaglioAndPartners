@@ -8,7 +8,7 @@ body.darkMode * .green_button {
 }
 
 body.darkMode:hover * .green_button:hover {
-    background-color: #009640;
+    background-color: #00ba82;
     color: white;
   }
   
