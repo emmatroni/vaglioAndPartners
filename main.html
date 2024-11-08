@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Vaglio&Partners</title>
+    <link rel="stylesheet" href="./styles/style-light.css">
+    <link rel="stylesheet" href="./styles/style-dark.css">
+</head>
+
+<body class="lightMode" id="body_main">
+    <header>
+        <div class="logo">
+            <a href="./main.html"><img src="media/logo-web-png/logotipo-chiaro.png" alt="Logo Vaglio And Partners"></a>
+        </div>
+        <nav>
+            <ul class="menu" id="menu">
+                <svg id="close-icon" onclick="hideMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./main.html">Chi Siamo</a></li>
+                <li class="dropdown">
+                    <a href="./main.html#activities-services">Servizi</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./main.html#activities-services">Organisation & Training</a></li>
+                        <li><a href="./main.html#activities-services">Organization & Training</a></li>
+                        <li><a href="./main.html#activities-services">Organization & Training</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./pages/contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a href="./main.html#final-content"><button class="button_rounded green_button"
+                    id="contact-button">Contattaci</button></a>
+            <!-- MODALITA GIORNO NOTTE -->
+            <div id="change_mode" onclick="change()">
+                <svg class="change_view_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.33 117.16">
+                    <path class="cls-1"
+                        d="M58.65,117.16C26.15,117.15-.04,90.92,0,58.41.04,26.13,26.22.03,58.6,0c32.44-.03,58.87,26.4,58.73,58.73-.14,32.27-26.42,58.45-58.68,58.43ZM105.35,58.94c.18-24.85-24.87-48.52-55.03-44.5,2.48,2.08,20.59,17.81,20.41,44.12-.18,26.49-18.75,42.02-21.24,44.03,30.16,4.59,55.67-18.75,55.85-43.66Z" />
+                </svg>
+            </div>
+            <svg id="menu-icon" onclick="showMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section id="main-iniziale">
+            <div class="slide-show">
+                <h1 class="title">Vaglio And Partners</h1>
+                <p class="sub-title">Al vostro fianco per contribuire al successo della vostra azienda</p>
+                <img class="slide" src="./media/imgs/slideshow-01.jpeg" alt="slide img">
+                <img class="slide" src="./media/imgs/slideshow-02.jpeg" alt="slide img">
+                <img class="slide" src="./media/imgs/slideshow-03.jpeg" alt="slide img">
+
+            </div>
+            <!-- box - introduttiva -->
+            <div class="box" id="intro">
+                <h1 class="section-title">Chi siamo</h1>
+
+                <p> <a class="link" href="#">Vaglio & Partners</a> è una società di consulenza che offre l'esperienza
+                    pluriennale dei partner per contribuire allo <span class="highlight">sviluppo organizzativo e
+                        manageriale</span> in aziende di tutte le dimensioni.</p>
+                <p> Crediamo nel <span class="highlight">valore delle persone</span>, nella necessità di sviluppare una
+                    cultura organizzativa <span class="highlight">positiva</span> e <span
+                        class="highlight">collaborativa</span> che consente di esprimere la massima efficacia dei
+                    processi</p>
+                <p>Attravgerso il Problem Solving Strategico accompagnamo il management al cambiamento, in un percorso
+                    di miglioramento che porti a <span class="highlight">risultati tangibili e soddisfacenti</span>, in
+                    cui le persone si sentano le vere protagoniste.</p>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+                <h1 class="section-title">Comportamenti e Organizzazione</h1>
+                <p>Riteniamo che i comportamenti delle persone in azienda dipendano sostanzialmente da tre piani
+                    d’influenza, la cui composizione determina l’efficacia o meno dei comportamenti stessi:</p>
+            </div>
+            <div class="box box-servizi" id="potenziale">
+                <div class="servizi-row">
+                    <div class="servizi-testo">
+                        <h3 class="servizi-title">Potenziale</h3>     
+                        <p>
+                            Determinato dall’attitudine individuale, molto importante in fase di selezione, meno
+                            importante in ambito di sviluppo, in quanto il soggetto è già nel ruolo, il suo
+                            miglioramento potrà avvenire sì in relazione al potenziale posseduto, ma molto più
+                            importante è la consapevolezza di poter/dover migliorare e la volontà di farlo.
+                        </p>
+                    </div>
+                    <div class="servizi-img">
+                        <img src="./media/imgs/slideshow-02.jpeg" alt="potenziale">
+                    </div>
+                </div>
+                <div class="box box-servizi" id="strumenti">
+                    <div class="servizi-row">
+                        <div class="servizi-img">
+                            <img src="./media/imgs/slideshow-02.jpeg" alt="potenziale">
+                        </div>
+                        <div class="servizi-testo">
+                            <h3 class="servizi-title">Strumenti</h3>
+                            <p>Rappresentati, oltre che dai contenuti “tecnici” del ruolo, dalle tecniche e metodi per la gestione del tempo, delle priorità, delle relazioni e della comunicazione e rappresentano l’ambito “classico” dei percorsi di sviluppo.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box box-servizi" id="ruolo">
+                    <div class="servizi-row">
+                        <div class="servizi-testo">
+                            <h3 class="servizi-title">Ruolo</h3>
+                            <p>Consapevolezza del ruolo costituisce il motore dei comportamenti in azienda, è fondamentale che venga compreso in modo dettagliato ciò che l’azienda chiede in termini di responsabilità e di comportamenti (lo “stile” aziendale) sia sul versante manageriale che su quello relazionale.</p>
+                            <p>Volontà di sfruttare il proprio potenziale, accompagnata dalla piena consapevolezza di ruolo è una situazione non negativa: la non padronanza degli strumenti determina però un rallentamento (Lentezza) nel raggiungimento dei risultati. La consapevolezza di ruolo, accompagnata da una buona conoscenza degli strumenti è una buona situazione di partenza, ma senza un potenziale adeguato il soggetto non riuscirà a raggiungere i risultati desiderati (Raggiungimento parziale). La situazione più pericolosa però è quella dove il buon potenziale è accompagnato da grande padronanza degli strumenti ma senza la necessaria consapevolezza di ruolo: questa situazione genererà infatti comportamenti disfunzionali.</p>
+                        </div>
+                        <div class="servizi-img">
+                            <img src="./media/imgs/slideshow-02.jpeg" alt="potenziale">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- <section id="activities-services">
+            <div class="box">
+                <h1 class="section-title">Attività e Servizi del centro sportivo</h1>
+                <div class="cardsSlideShow">
+                    <a class="freccia" id="prev-slide-arrow" onclick="nextCardSlide(-1)">&#10094;</a>
+                    <div class="content-cards-slides">
+                        <div class="cards-slide" id="slide-activities">
+                            <div class="two-cards">
+                                <a href="../pages/attivita.html#palestre">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../media/1-Palestre.jpg" alt="Palestre">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="../pages/attivita.html#campi-esterni">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../media/2-CampiEsterni.jpg" alt="Campi-esterni">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="card-title">Campi Esterni</h3>
+                                            <p>Chiunque può giocare liberamente e gratuitamente nei campi esterni di
+                                                Basket
+                                                e
+                                                Pallavolo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cards-slide" id="slide-activities">
+                            <div class="two-cards">
+                                <a href="../pages/attivita.html#mini-rugby">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../media/3-MiniRUGBY.jpg" alt="Rugby">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="card-title">Minirugby</h3>
+                                            <p>Nel 1932 nasce il Rugby Treviso che dal 1979 vede la famiglia Benetton
+                                                proprietaria
+                                                del
+                                                club.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="../pages/servizi.html#ristorante">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../media/5-ristorante.jpg" alt="Ristorante">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="card-title">Ristorante</h3>
+                                            <p>Il Ristorante, dotato di ampi spazi che possono arrivare ad ospitare fino
+                                                a 600
+                                                persone.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cards-slide" id="slide-services">
+                            <div class="two-cards">
+
+                                <a href="../pages/servizi.html#biblioteca">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../media/4-biblioteca.jpg" alt="Biblioteca Benetton">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="card-title">Biblioteca Stefano Benetton</h3>
+                                            <p>Una delle biblioteche più complete in Italia per quanto riguarda libri a
+                                                tema
+                                                sportivo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="../pages/servizi.html#foresteria">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../media/6-foresteria.jpg" alt="Foresteria">
+                                        </div>
+                                        <div class="card-content">
+                                            <h3 class="card-title">Foresteria</h3>
+                                            <p>Presente anche un’ampia foresteria, con camere e mini-appartamenti di
+                                                varie
+                                                metrature.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="punti">
+                            <span class="punto" onclick="setCardSlide(0);"></span>
+                            <span class="punto" onclick="setCardSlide(1);"></span>
+                            <span class="punto" onclick="setCardSlide(2);"></span>
+                        </div>
+                    </div>
+                    <a class="freccia" id="next-slide-arrow" onclick="nextCardSlide(1)">&#10095;</a>
+                </div>
+
+            </div>
+
+
+        </section> -->
+        <!--FINAL CONTENT - DOVE TROVARCI -->
+        <section id="activities-services">
+            <div class="box">
+                <h1 class="section-title">I nostri servizi</h1>
+                <div class="flex-box">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./media/imgs/slideshow-01.jpeg" alt="services-1">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./media/imgs/slideshow-01.jpeg" alt="services-1">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./media/imgs/slideshow-01.jpeg" alt="services-1">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./media/imgs/slideshow-01.jpeg" alt="services-1">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./media/imgs/slideshow-01.jpeg" alt="services-1">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./media/imgs/slideshow-01.jpeg" alt="services-1">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">ORGANIZATION & TRAINING</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- <section id="final-content">
+            <div class="box">
+                <h1 class="section-title">Contattaci</h1>
+                <div class="flex-box-no-wrap final-content-box">
+                    <div class="reference">
+                        <p> <span class="highlight">Vaglio &  Partners</span> email:
+                            <br>p.IVA NNNNNNNNN
+                        </p>
+                        
+                    </div>
+                    <div class="reference">
+                        <p>Milano (MI)</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- SECTION - CONTATTI -->
+        <section class="box row-flex-box" id="contatti">
+            <div class="contatti-info">
+                <h3 class="section-title">Contattaci</h3>
+                <div class="row-flex-box">
+                    <p><svg class="contatti-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        </svg>Milano (MI)</p>
+                </div>
+                <div class="row-flex-box">
+                    <p><svg class="contatti-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>Email: <a class="link" href="mailto:info@vagliopartners.com">info@vagliopartners.com</a>
+                    </p>
+                </div>
+                <div class="row-flex-box">
+                    <p><svg class="contatti-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                        </svg>N. Tel: <a class="link" href="tel:+393392542241">+39 339 254 2241</a></p>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <!-- required: https://caniuse.com/mdn-html_elements_input_required -->
+            <div class="form-container column-flex">
+                <div id="form-result"></div>
+                <form id="form">
+                    <div class="col-form nome">
+                        <label class="label-form" for="name">Nome e Cognome:</label>
+                        <input class="input-field" id="name-input" name="name" type="text" required>
+                    </div>
+
+                    <div class="col-form email">
+                        <label class="label-form" for="email">E-mail:</label>
+                        <input class="input-field" id="email-input" name="email" type="email" required>
+                    </div>
+
+                    <div class="col-form oggetto">
+                        <label class="label-form" for="subject">Oggetto:</label>
+                        <input class="input-field" id="subject-input" name="subject" type="text" required>
+                    </div>
+
+                    <div class="col-form messaggio">
+                        <label class="label-form" for="message">Messaggio:</label>
+                        <textarea class="textarea-field" id="message-input" name="message" required></textarea>
+                    </div>
+
+                    <button class="button button_rounded green_button submit-button" id="button-send"
+                        type="submit">Invia Messaggio</button>
+                </form>
+            </div>
+
+
+        </section>
+    </main>
+    <!-----------FIXED FOOTER-------------->
+    <footer class="fixed-footer">
+        <p><span>&copy; 2024 Vaglio & Partners </span> - Tutti i diritti riservati</p>
+
+    </footer>
+
+    <!-----------JAVASCRIPT-------------->
+    <script src="../scripts/img-slideshow.js"></script>
+    <script src="../scripts/cards-slideshow.js"></script>
+    <script src="../scripts/responsive-menu.js"></script>
+    <script src="../scripts/cookie.js"></script>
+    <script src="../scripts/header.js"></script>
+</body>
+
+</html>

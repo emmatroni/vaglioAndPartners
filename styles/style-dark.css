@@ -1,0 +1,63 @@
+.darkMode {
+    background-color: #0c1226;
+    color: white;
+}
+
+body.darkMode * .green_button {
+    color: white;
+}
+
+body.darkMode:hover * .green_button:hover {
+    background-color: #009640;
+    color: white;
+  }
+  
+
+body.darkMode * #intro p {
+    color: white;
+}
+
+body.darkMode * .card {
+    background-color: white;
+    color: #0c1226;
+}
+
+body.darkMode * .social-icon {
+    fill: white;
+}
+/* homepage - centro sportivo */
+body.darkMode * #activities-services {
+    background-color: #222b47;
+}
+
+/* Aggiungere Header and Footer */
+
+body.darkMode footer {
+    background-color:  white;
+    color: #0c1226;
+}
+/* CHI SIAMO */
+body.darkMode * .box#chi-siamo {
+    background-color: #222b47;
+}
+
+/* ATTIVITA / SERVIZI*/
+body.darkMode * .attivita-row {
+    background-color: #222b47;
+}
+body.darkMode * .servizi-row {
+    background-color: #222b47;
+}
+
+/* CONTATTI */
+body.darkMode * .form-container {
+    background-color: #222b47;
+    color: white;
+}
+
+/* RESPONSIVE small-decvices */
+@media(max-width:768px){
+    body.darkMode:hover * .change_view_icon:hover {
+        fill: white;
+    }
+}

@@ -1,0 +1,864 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3em;
+
+  font-size: 20px;
+}
+
+/* eliminare stili di default link */
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* default flex-box */
+.flex-box-no-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+/*      MODALITA VISUALIZZAZIONE LIGHT      */
+
+.lightMode {
+  background-color: white;
+  color: #0c1226;
+}
+
+/* ICONA CAMBIO MODALITA */
+.change_view_icon {
+  cursor: pointer;
+  stroke-width: 0px;
+  height: 25px;
+  margin-left: 10px;
+  padding-top: 7px;
+  fill: #fff;
+  transition: fill 0.5s ease;
+}
+
+.change_view_icon:hover {
+  fill: #009640;
+}
+
+/*                      HEADER                    */
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* assicurati che l'header sia sopra altri elementi */
+  z-index: 2000;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 30px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#menu-icon,
+#close-icon {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+  margin: 0 30px;
+  line-height: 1em;
+}
+
+.menu li a {
+  font-size: 0.8em;
+  transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+  color: #01a749;
+}
+
+/* MENU A TENDINA (dropdown) */
+.dropdown {
+  position: relative;
+  /* transition: all 0.3s ease; */
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 5px;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  z-index: 2100;
+}
+
+.dropdown-content a {
+  color: rgb(146, 146, 146);
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/*  CARATTERISTICHE GENERALI BOTTONI  */
+button {
+  text-decoration: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+.button_rounded {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.green_button {
+  border-style: solid;
+  background-color: transparent;
+  border-color: #009640;
+  /* default border-style: outset - con un'ombra */
+  transition: background-color 0.5s ease;
+}
+
+body.lightMode * .green_button {
+  color: #0c1226;
+}
+
+body.lightMode:hover * .green_button:hover {
+  background-color: #009640;
+  color: white;
+}
+
+#contact-button {
+  font-size: 0.8em;
+  margin: 0 10px;
+  color: white;
+}
+
+/*---------- MAIN - HOMEPAGE ---------*/
+/* da applicare in tutti i link nel testo*/
+.link {
+  color: #01a749;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.slide-show {
+  background-color: black;
+  /* serve per evitare che le fotografie quando cambiano di opacità non tendino al bianco ma piuttosto si spengano*/
+  display: flex;
+  height: 600px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* permette di disporre elementi in colonna */
+}
+
+
+.title,
+.sub-title {
+  color: white;
+  z-index: 1000;
+  text-align: center;
+  /* testo allineato al centro */
+}
+
+.title {
+  font-weight: bold;
+  padding: 0 5vw;
+  font-size: 3.5em;
+  line-height: 1.2em;
+}
+
+.sub-title {
+  font-size: 1em;
+  padding: 10px 5vw 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.slide {
+  width: 100%;
+  object-fit: cover;
+  height: 600px;
+  position: absolute;
+  transition: opacity 500ms;
+  /* vedi js per animazione */
+}
+
+.box {
+  /* ho scelto di fare vw laterale per evitare barra di scorrimento inferiore
+    quando responsive */
+  padding: 80px 10vw;
+}
+
+body.lightMode * #intro p {
+  color: #626974;
+}
+
+#intro p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  display: block;
+}
+
+/* activities-services homepage */
+body.lightMode * #activities-services {
+  background-color: #f1f1f1;
+}
+
+.section-title {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0 0 30px;
+}
+
+#activities-services .box .section-title {
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 0;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* .content-cards-slides {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards-slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.two-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+} */
+
+/* l'asterisco seleziona tutti gli elementi figli anche indiretti di un body con classe lightmode, i quali sono div con classe card*/
+body.lightMode * .card {
+  background-color: rgb(20, 25, 55);
+  opacity: 0.8;
+  color: white;
+}
+
+.card {
+  cursor: pointer;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image img {
+  width: 100%;
+  /* non modificare l'aspect ratio dell'immagine */
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-content {
+  padding: 0 15px 15px;
+  font-size: 1em;
+}
+
+.card-title {
+  font-size: 1.2em;
+  padding: 10px 0 5px;
+}
+
+.punti {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.punto {
+  width: 10px;
+  cursor: pointer;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(160, 160, 160);
+  transition: transform 0.2s ease;
+}
+
+.punto:hover {
+  background-color: #01a749;
+  transform: scale(1.5);
+}
+
+.freccia {
+  cursor: pointer;
+  padding: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.freccia:hover {
+  color: #009640;
+  transform: scale(1.5);
+}
+
+.row-flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+/*---------- SECTION - attivita / servizi ----------*/
+.box-attivita {
+  margin: 100px 0 180px;
+}
+
+.attivita-row,
+.servizi-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+
+body.lightMode * .attivita-row {
+  background-color: #f1f1f1;
+}
+
+.servizi-row {
+  padding: 50px;
+  border-radius: 10px;
+}
+
+body.lightMode * .servizi-row {
+  background-color: #f1f1f1;
+}
+
+.attivita-img,
+.servizi-img {
+  flex: 1;
+  overflow: hidden;
+}
+
+.attivita-img img,
+.servizi-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.servizi-img img {
+  border-radius: 10px;
+}
+
+.attivita-testo,
+.servizi-testo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 20px;
+}
+
+.attivita-testo {
+  padding: 150px 40px;
+}
+
+.attivita-title,
+.servizi-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.servizi-title {
+  text-align: center;
+}
+
+/* ristorante */
+.highlight-ristorante {
+  text-align: center;
+}
+
+/*---------- SECTION - chi siamo ----------*/
+body.lightMode * .box#chi-siamo {
+  background-color: #f1f1f1;
+}
+
+#chi-siamo .section-title {
+  text-align: center;
+}
+
+#numeri,
+#anni-ettari-persone {
+  margin: 80px 0;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#anni-ettari-persone {
+  margin: 0;
+  text-align: center;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+#chi-siamo .column-flex {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.column-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.column-imgs img {
+  object-fit: scale-down;
+  max-width: 300px;
+  /* per allineare rispetto al centro del contenitore */
+  vertical-align: middle;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#backImage {
+  opacity: 0.8;
+}
+
+#frontImage {
+  position: relative;
+  right: 30px;
+  bottom: -20px;
+}
+
+.list {
+  padding: 0 10px;
+}
+
+.list li::marker {
+  color: #009640;
+}
+
+.list li {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.column h2 {
+  font-size: 2.5em;
+  color: #01a749;
+  padding-bottom: 10px;
+}
+
+/*-------------CONTATTI------------*/
+#contatti {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contatti-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contatti-icon {
+  width: 15px;
+  fill: #01a749;
+  margin-right: 15px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px 3vw;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  max-width: 400px;
+  position: relative;
+}
+
+#form-result {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+body.lightMode * .form-container {
+  background-color: #f1f1f1;
+  color: #0c1226;
+}
+
+.col-form {
+  width: 100%;
+}
+
+.input-field,
+.textarea-field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 6px;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #009640;
+  outline: none;
+  box-shadow: 0 0 5px rgba(28, 138, 67, 0.5);
+}
+
+.submit-button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* SECTION - CONTATTI */
+#contatti {
+  gap: 40px;
+}
+
+/* -------- FINAL-CONTENT | dove trovarci ------- */
+
+.final-content-box {
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+.mappa,
+.reference {
+  width: 60vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mappa iframe {
+  height: 400px;
+  width: 100%;
+}
+
+.reference {
+  justify-content: space-evenly;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #01a749;
+}
+
+.social-icon {
+  height: 42px;
+  margin: 15px 15px 0;
+  fill: white;
+  /* modifica colore delle icone */
+  transition: fill 0.3s ease;
+}
+
+body.lightMode * .social-icon {
+  fill: #0c1226;
+}
+
+.social-link:hover .social-icon {
+  fill: #009640;
+  /* colore quando hover sopra icona */
+}
+
+/*----------------- FOOTER -----------------*/
+body.lightMode footer {
+  background-color: #0c1226;
+  color: white;
+}
+
+.fixed-footer {
+  /* footer fisso nella pagina dell'utente */
+  position: fixed;
+
+  padding: 8px 20px;
+  /* posiziona al centro il bordo sinistro */
+  left: 50%;
+  /* mi serve per compensare l'allineamento rispetto alla pagina */
+  transform: translateX(-50%);
+  bottom: 2%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+}
+
+.fixed-footer p {
+  margin: 0;
+  line-height: 1.5em;
+  font-size: 0.7em;
+}
+
+.fixed-footer p span {
+  color: #01a749;
+  font-size: 1em;
+}
+
+/* RESPONSIVE fino a 700 c.ca */
+@media (max-width: 1100px) {
+  .menu {
+    display: block;
+    position: absolute;
+    background-color: #01a749;
+    height: 100vh;
+    width: 10em;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 3000;
+    transition: 1s;
+  }
+
+  #menu-icon,
+  #close-icon {
+    margin: 15px;
+    display: block;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+  }
+
+  .menu li {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .menu li a {
+    font-size: 1em;
+  }
+
+  .menu li a:hover {
+    color: #0c1226;
+  }
+
+  /* attivita - servizi */
+  .box-attivita {
+    margin: 100px 0;
+  }
+
+  .attivita-row,
+  .servizi-row {
+    flex-direction: column;
+    padding: 8vw;
+  }
+
+  .attivita-testo {
+    padding: 0px;
+  }
+
+  .attivita-img img {
+    border-radius: 10px;
+  }
+}
+
+/* RESPONSIVE small-decvices */
+@media (max-width: 768px) {
+  body {
+    line-height: 1.3em;
+  }
+
+  #contact-button {
+    display: none;
+  }
+
+  body.lightMode:hover * .change_view_icon:hover {
+    fill: white;
+  }
+
+  .title {
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  .box {
+    padding: 5vw;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .flex-box-no-wrap {
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 80vw;
+  }
+
+  /* dove trovarci */
+  .mappa {
+    height: auto;
+  }
+
+  /* chi siamo */
+  #numeri,
+  #anni-ettari-persone {
+    margin: 25px 0;
+    gap: 20px;
+  }
+
+  #frontImage {
+    display: none;
+  }
+
+  #backImage {
+    width: 90vw;
+  }
+
+  .column-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #backImage {
+    opacity: 1;
+  }
+
+  #frontImage {
+    right: 0;
+    bottom: 0;
+  }
+
+  .freccia {
+    display: none;
+  }
+
+  /* attivita */
+  .box-attivita {
+    margin: 20px 0;
+  }
+
+  .row-flex-box {
+    margin: 10 0;
+  }
+
+  .attivita-testo,
+  .servizi-testo {
+    text-align: center;
+  }
+
+  /* final content */
+  .final-content-box {
+    gap: 30px;
+    /* margine per non nascondere il contenuto con il footer */
+    margin-bottom: 100px;
+  }
+}
+
+/* footer */
+.fixed-footer {
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.fixed-footer p {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+
+@media (max-width: 310px) {
+  .logo {
+    display: none;
+  }
+
+  .header-right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .attivita-row {
+    flex: 0.5;
+  }
+}
