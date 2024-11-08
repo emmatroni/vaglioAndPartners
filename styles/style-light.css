@@ -370,12 +370,16 @@ body.lightMode * .card {
 body.lightMode * .value {
   background-color: #f1f1f1;
 }
+
 .value{
   padding: 20px;
-  margin: 40px 0 ;
+  margin: 40px;
   border-radius: 10px;
-  max-width: 1000px;    /* Larghezza massima su schermi grandi */
+  max-width: 100%;    /* Larghezza massima su schermi grandi */
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .values-testo {
@@ -773,8 +777,6 @@ body.lightMode footer {
 
   .values-testo {
     padding: 0;
-    text-align: center;       /* Testo centrato per estetica */
-    overflow: ;
   }
 
   .value-img img {
